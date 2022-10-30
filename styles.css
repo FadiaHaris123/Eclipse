@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align:center;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-header{
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 20px #c0b9b9;
+}
+
+.logo{
+    width: 20%;
+    float: left;
+}
+
+.logo img{
+    margin-top: 15px;
+    position: absolute;
+    bottom: 10px;
+    width: 250px;
+    left: 40px;
+    height: 80px;
+}
+
+.main-header nav{
+    float: right;
+    right: 40px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+.main-header nav a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+
+.main-header nav button{
+    padding: 10px;
+    border: 0;
+}
