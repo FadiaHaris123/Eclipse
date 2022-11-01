@@ -7,6 +7,9 @@
     <title>Eclipse Hotel Booking</title>
     <link rel="icon" type="image/x-icon" href="/image/Logo.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 </head>
 <body>
     <div class="container">
@@ -18,7 +21,7 @@
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">About</a>
-                    <a href="#">Testimonial</a>
+                    <a href="#testimonials">Testimonial</a>
                     <a href="#">Contact</a>
                     <div class="button"><button><a href="#">Book Now</a></button></div>
                 </nav>
@@ -67,14 +70,73 @@
             </div>
         </section>
         <section class="Book Now"></section>
-        <section class="Testimonials">
-
+        <section id="testimonials">
+        
+            <div class="title">
+                <h1>What People Says</h1>
+            </div>
+            
+            
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="image/img1.jpg" alt="" class="image" />
+                        <p>They were extremely accommodating and allowed us to check in early 
+                            at like 10am. We got to hotel super early and I didn’t wanna wait.
+                             So this was a big plus. The sevice was exceptional
+                             as well. Would definitely send a friend there.</p>
+    
+                             
+    
+                             <i class='bx bxs-quote-alt-left quote-icon'></i>
+    
+                             <div class="details">
+                                <span class="name">Henry</span>
+                                <span class="job">Web Developer</span>
+                             </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <img src="image/img2.jpg" alt="" class="image" />
+                        <p>The rooms were clean, very comfortable, and the staff was amazing. 
+                            They went over and beyond to help make our stay enjoyable. I highly
+                             recommend this hotel for anyone visiting downtown.</p>
+    
+                             <i class='bx bxs-quote-alt-left quote-icon'></i>
+    
+                             <div class="details">
+                                <span class="name">Denis</span>
+                                <span class="job">Musician</span>
+                             </div>
+                    </div>
+    
+                    
+    
+                    <div class="slide swiper-slide">
+                        <img src="image/img4.jpg" alt="" class="image" />
+                        <p>Excellent property and very convenient to USC activities. Front desk 
+                            staff is extremely efficient, pleasant and helpful. Property is clean 
+                            and has a fantastic old time charm.</p>
+    
+                             <i class='bx bxs-quote-alt-left quote-icon'></i>
+    
+                             <div class="details">
+                                <span class="name">Ann Mary</span>
+                                <span class="job">Content Creater</span>
+                             </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next navigation"></div>
+                <div class="swiper-button-prev navigation"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
         <section class="Contact"></section>
         <footer>
 
         </footer>
     </div>
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
