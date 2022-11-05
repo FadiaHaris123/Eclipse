@@ -6,10 +6,9 @@
     padding: 0;
 }
 
-/* body{
-    text-align:center;
+body{
     box-sizing: border-box;
-} */
+}
 
 .wrapper{
     width: 1170px;
@@ -135,7 +134,7 @@
     color:#4b495a;
 }
 
-.demo-booking{
+#Home .demo-booking{
     background-image: linear-gradient(to top left,#615b8f,#0b0729);
     border: none;
     padding: 15px;
@@ -151,14 +150,15 @@
     letter-spacing: 1px;
 }
 
-.demo-booking:hover{
+#Home .demo-booking :hover{
 color: #0b0729;
+transform: scale(1.5);
 }
 
 
 .area{
     background: #ffffff;  
-    background: -webkit-linear-gradient(to left, #ffffff, #ffffff);  
+    background-color: white;
     width: 100%;
     height:100vh;
 }
@@ -325,8 +325,8 @@ color: #0b0729;
 .compare-site{
     display: flex;
     width: fit-content;
-    margin: 10px 100px;
-    padding: 10px;
+    margin: 10px 180px;
+    padding: 15px;
 }
 
 .compare-site img{
@@ -336,13 +336,303 @@ color: #0b0729;
     padding: 10px 20px;
 }
 
-.About h3{
+#About h2{
     font-family: 'Nunito',sans-serif;
     color:#482575;
     font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 100px;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
 }
+
+
+
+.main{
+    background-image: linear-gradient(#6a6494,#ffffff);
+    width: 100%;
+    height: 90vh; 
+    display: flex; 
+}
+
+.mainButton button{
+    position: absolute;
+    margin-top:500px;
+    margin-left: 8%;
+    color: rgb(244, 244, 248);
+    background-color: #282250;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.mainButton button:hover {
+    background-image: linear-gradient(#6a6494,hsl(269, 75%, 11%));
+    color: white;
+    font-weight: 700;
+} 
+.mainImg img{
+    width: 550px;
+    height: 450px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 90px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.mainHeading h3{
+    position: absolute;
+    text-align: left;
+    letter-spacing: 1px;
+    color: rgb(27, 21, 51);
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 730px;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainContent p{
+    color: rgb(42, 35, 68);
+    position: absolute;
+    text-align: justify;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 12%;
+    font-size: 13px;
+    padding: 40px 100px;
+    font-family: 'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainImg .backImg {
+    display: none;
+    position: absolute;
+    width: 560px;
+    height: 450px;
+    margin-top: 100px;
+    margin-left: 80px;
+    /* padding-left: 3%; */
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.mainImg:hover .backImg{
+    display: inline;
+}
+
+
+/*----------------------------------
+------------Contact-----------------*/
+  
+#Contact .contact-page{
+    color: rgb(66, 61, 87);
+    font-family:  'Nunito', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content:center;
+    margin: 200px;
+    letter-spacing: 1px;
+    background:linear-gradient(#ffffff,#a5a1ca);
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px #999494;
+}
+
+#Contact .contact.form{
+    padding: 50px;
+}
+
+#Contact .contact.details{
+    padding: 50px;
+}
+
+#Contact h4{
+    padding-bottom: 20px;
+}
+#Contact p{
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+#Contact .form-group {
+    position: relative;
+    margin-bottom:28px;
+}
+
+
+#Contact .gt-input {
+    font-size:20px;
+
+    border:none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+
+    border-bottom: 1px solid rgb(65, 58, 88);
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    color: #ccc;
+    box-sizing: content-box; 
+}
+
+
+#Contact .gt-text {
+    padding:10px 20px;
+    height:100px;
+    width:100%;
+    font-family:"Roboto";
+    font-size:12px;
+}
+
+#Contact .gt-input:focus {
+    outline:none;
+}
+
+#Contact label {
+    position: absolute;
+    font-size:12px;
+    color:rgb(70, 58, 88);
+    transition: all .4s;
+    top:40px;
+    transform:translateY(-50%);
+    margin-left:18px;
+    cursor:text;
+    z-index: 1;
+}
+
+#Contact .map{
+margin-top: 30px;
+
+}
+
+#Contact .gt-button{
+
+    border: none;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 0px;
+    letter-spacing: 1PX;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 1px 1px 10px #999494;
+    background:linear-gradient(#453d7f,#383356);
+     
+}
+
+#Contact .gt-button:hover {
+    background:linear-gradient(#ffffff,#ffffff);
+    color: rgb(52, 30, 71);
+    font-weight: bold;
+}
+
+#Contact .move-up {
+    margin-top:-32px;
+    margin-left:0px;
+    font-size:14px;
+    background:linear-gradient(#615b8f,#0b0729);
+    border-radius:8px 0;
+    color:white;
+    padding:4px 8px;
+    min-width:100px;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+
+.footer {
+    color: #ccc;
+    font-family:  'Nunito', sans-serif;
+    border-top: 1px solid rgb(36, 31, 31);
+    background-color: #0b0729;
+  }
+  
+.footer .footer-container{
+    display: flex;
+    justify-content:space-around;
+    background:linear-gradient(#615b8f,#0b0729);
+    height: 200px;
+    padding: 40px;
+}
+  
+.footer-col h2{
+font-family: 'Nunito',sans-serif;
+letter-spacing: 1px;
+}
+
+.footer .footer-col{
+    width: 200px;
+    line-height: 1.5;
+}
+  
+.footer .subscribe-col{
+    padding-top: 30px;
+    line-height: 2;
+}
+
+  
+.footer .subscribe-col input{ 
+    font-size:10px;
+    background-color: transparent;
+    border: 0;
+    background-color:white;
+    resize: none;
+    outline: none;
+    padding: 10px 25px;
+    margin: 8px 0;
+    color: #ccc;
+    box-sizing: content-box; 
+  
+  }
+  .footer .subscribe-col button{
+    border:0;
+    color:white;
+    background:linear-gradient(#ff0000,#880404);
+    transition:.4s;
+    cursor: pointer;
+    border-radius: 30%;
+    padding: 5px 15px;
+    margin: 5px;
+  }
+  
+  
+  .footer .subscribe-col i{
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .footer .alink{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 13px;
+  }
+
+  .footer p{
+    color: #ccc;
+    font-size: 13px;
+    line-height:1px;
+  }
+  
+  
+  .footer .alink:hover{
+    color: rgb(154, 124, 214);
+  }
+
+  footer .footer-bottom p {
+    /* padding-left: 550px; */
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+

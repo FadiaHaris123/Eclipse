@@ -21,7 +21,7 @@
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: 400;
-    padding-top: 100px;
+    padding-top: 50px;
     color: #200249;
 }
 
@@ -34,8 +34,8 @@
     overflow: hidden;    
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-left: 280px;
+    margin-top: 50px;
+    margin-left: 160px;
 }
 
 .testimonial p{

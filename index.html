@@ -7,9 +7,12 @@
     <title>Eclipse Hotel Booking</title>
     <link rel="icon" type="image/x-icon" href="/image/Logo.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/book.css">
     <link rel="stylesheet" href="styles/testimonials.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <div class="container">
@@ -19,15 +22,15 @@
                     <img src="image/Logo-tag.png" alt="logo with tagline">
                 </div>
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
                     <a href="#testimonials">Testimonial</a>
-                    <a href="#">Contact</a>
-                    <div class="button"><button><a href="#">Book Now</a></button></div>
+                    <a href="#Contact">Contact</a>
+                    <div class="button"><button><a href="#Book Now">Book Now</a></button></div>
                 </nav>
             </div>
         </header>
-        <section class="Home">
+        <section id="Home">
             <div class="content">
                 <div class="main-content">It's not just stay<br>It's <span>Eclipse </span>stay</div>
                 <p>When it comes to booking the perfect hotel, vacation rental, resort, apartment, guest house, we have got you covered..</p>
@@ -59,10 +62,41 @@
                 </ul>
             </div >
         </section>
-        <section class="About">
-            <h3>We compare multiple booking sites at once</h3>
+        <section id="About">
+            <div class="main">
+                <div class="mainHeading">
+                    <h3 class="About-us">About Us</h3>
+                </div>
+                <div class="mainImg">
+                    <img src="image/about.jpg" alt="about us" class="backImg">
+                    <img src="image/about 1.jpg" alt="about us">
+                </div>
+    
+                <div class="mainContent">
+                    <p>
+                        We strive to be the first choice in the mind of guests.
+                        In our journey to achieve this,
+                        we practice strong beliefs and actions that respect the diversity of people,
+                        the community, ethics and the planet.
+                        A list of the most popular and highly regarded hotel Eclipse takes care of your accommodation needs when
+                        you're in a different city for business or leisure.
+                        Book five-star hotels without digging a hole in your pocket or find the best budget rooms across the
+                        country.
+                        One can easily find hotels near popular tourist spots or get a hotel room booking in a quieter place for
+                        a peaceful stay.
+                        Budget properties, luxury resorts and 3-star hotels, we have something for everyone.
+                        Whenever planning a trip, visit Eclipse for the biggest discounts and savings on your bookings.
+                    </p>
+                </div>
+                <div class="mainButton">
+                    <button type="button" onclick="display()">Read More</button>
+
+                </div>
+    
+            </div>
+            <h2 class="site-heading">We compare multiple booking sites at once</h2>
             <div class="compare-site">
-                <img src="image/120px-OYO_Rooms_(logo).png" height="100px" width="100px" style="padding:0px;"/>
+                <img src="image/OYO_Logo-1024x370.png" height="50px" width="150px"/>
                 <img src="image/120px-Agoda_logo.svg.png" height="50px" width="100px"/>
                 <img src="image/120px-Booking.com_logo.svg.png" height="50px" width="180px"/>
                 <img src="image/120px-Hotels.com_logo.svg.png" height="50px" width="180px"/>
@@ -85,9 +119,6 @@
                             at like 10am. We got to hotel super early and I didn’t wanna wait.
                              So this was a big plus. The sevice was exceptional
                              as well. Would definitely send a friend there.</p>
-    
-                             
-    
                              <i class='bx bxs-quote-alt-left quote-icon'></i>
     
                              <div class="details">
@@ -131,8 +162,116 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="Contact"></section>
-        <footer>
+        <section id="Contact">
+
+            <div class="contact-page">
+
+                <div class="contact form">
+                  <h3>SEND US A MESSAGE</h3><br>
+        
+                    <!-- <div class="container"> -->
+                      <form action="" class="main-form">
+                  
+                        <div class="form-group">
+                          <label for="name">Full Name</label>
+                          <input type="text" id="name" class="gt-input" placeholder="">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" id="email" class="gt-input">
+                        </div>
+        
+                        <div class="form-group">
+                          <label for="subject">Subject</label>
+                          <input type="text" id="subject" class="gt-input">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="message">Your Message</label>
+                          <textarea name="message" id="message" cols="50" rows="10" class="gt-input gt-text"></textarea>
+                        </div>
+                  
+                        <button type="submit" class="gt-button" value="Submit">SUBMIT</button>
+                        <h3 class="h1"></h3>
+                      </form>
+        
+                    </div>
+                    <div class="contact details">
+                        <h3>CONTACT INFO</h3><br>
+    
+                        <h4>Email Us At</h4>
+                        <p>contact@eclipse.com <br>
+                            info@eclipse.com</p>
+                            <br>
+                        <h4>Call Us At</h4>
+                        <p>Phone: (+91) 9784839209 <br>
+                            Mobile: (+91) 6784739442<br>
+                            Fax: (+91) 8782847216</p>
+                            <br>
+                        <h4>Where to Find Us</h4>
+                        <p>Park Centre, Technopark Campus, Thiruvananthapuram, Kerala 695581</p>
+    
+                        <!-- Google Map Copied Code -->
+                        <iframe class="map" src=
+                                "https://maps.google.com/maps?width=658&amp;height=446&amp;hl=en&amp;q=technopark&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                width="400"
+                                height="200"
+                                frameborder="0"
+                                style="border:0;"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0">
+                        </iframe>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-col">
+        
+                  <H2>ECLIPSE</H2>
+                    
+                </div>
+        
+                <div class="footer-col">
+        
+                  <H3>Quick Links</H3><br>
+                   <a href="#" class="alink">Home</a> <br>
+                   <a href="#" class="alink">About Eclipse</a> <br>
+                   <a href="#" class="alink">Book Now</a> <br>
+                   <a href="#" class="alink">Testimony</a> 
+                   
+                </div>
+        
+                <div class="footer-col">
+                  <H3>Reservations</H3><br>
+                  <p>Tel: 9784983028</p><br>
+                  <p>Skype: EclipseHotelbooking</p><br>
+                  <p>reservations@eclipse.com</p>
+        
+                </div>
+        
+                <div class="subscribe-col">
+        
+                  <input type="text" placeholder="Email"/>
+                  <button>Subscribe</button><br>
+        
+                  <i class="fa fa-facebook alink"></i>
+                  <i class="fa fa-instagram alink"></i>
+                  <i class="fa fa-twitter alink"></i>
+                  
+                </div>
+            </div>
+              
+            <div class="footer-bottom">
+                <p>Copyright ©2022 ECLIPCE | This page is made by Eclipse</p>
+            </div>
+
 
         </footer>
     </div>
